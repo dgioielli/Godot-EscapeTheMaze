@@ -22,6 +22,7 @@ func _process(delta):
 func _on_Player_area_entered(area):
 	if (area.is_in_group(CtesGroups.ENEMIES)):
 		emit_signal("dead")
+		return
 	if (area.has_method("pickup")):
 		area.pickup()
 	if (area.type == "key_red"):

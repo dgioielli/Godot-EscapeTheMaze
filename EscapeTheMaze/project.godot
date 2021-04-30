@@ -22,6 +22,7 @@ config/icon="res://icon.png"
 
 CtesDir="*res://CTEs/CtesDir.gd"
 CtesGroups="*res://CTEs/CtesGroups.gd"
+CtesItems="*res://CTEs/CtesItems.gd"
 
 [display]
 
