@@ -36,6 +36,9 @@ func pickup():
 	match type:
 		CtesItems.COIN:
 			emit_signal("coin_pickup", 1)
+			$CoinPickup.play()
+		CtesItems.RED_KEY:
+			$KeyPickup.play()
 	$CollisionShape2D.disabled = true
 	$Tween.start()
 
