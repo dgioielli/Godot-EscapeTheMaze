@@ -26,7 +26,8 @@ func _ready():
 ## Funções de eventos dos sinais
 
 func game_over():
-	print("dead")
+	#print("dead")
+	Global.game_over()
 	pass
 
 func _on_Player_grabbed_key():
@@ -35,7 +36,8 @@ func _on_Player_grabbed_key():
 	pass
 
 func _on_Player_win():
-	print("win")
+	#print("win")
+	Global.next_level()
 	pass
 
 
@@ -67,7 +69,7 @@ func spawn_items():
 				var p = Pickup.instance()
 				p.init(type, pos)
 				add_child(p)
-				
+				p.connect("coin_pickup", $HUD, "update_score")
 
 
 

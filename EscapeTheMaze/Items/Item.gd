@@ -1,5 +1,9 @@
 extends Area2D
 
+## Sinais
+
+signal coin_pickup
+
 ## Variáveis
 
 var textures = { CtesItems.COIN : CtesItems.PATH_COIN,
@@ -29,6 +33,9 @@ func init(_type, pos):
 	position = pos
 
 func pickup():
+	match type:
+		CtesItems.COIN:
+			emit_signal("coin_pickup", 1)
 	$CollisionShape2D.disabled = true
 	$Tween.start()
 

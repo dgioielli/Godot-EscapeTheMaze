@@ -5,6 +5,7 @@
 [node name="Node" type="Node"]
 
 [node name="crate_red" type="Sprite" parent="."]
+position = Vector2( 64, 0 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 448, 0, 64, 64 )
@@ -18,6 +19,7 @@ scale = Vector2( 0.998047, 1.00403 )
 polygon = PoolVector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 
 [node name="crate_brown" type="Sprite" parent="."]
+position = Vector2( 128, 0 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 384, 0, 64, 64 )
@@ -31,6 +33,7 @@ scale = Vector2( 0.998047, 1.00403 )
 polygon = PoolVector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 
 [node name="crate_blue" type="Sprite" parent="."]
+position = Vector2( 0, 64 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 512, 0, 64, 64 )
@@ -44,6 +47,7 @@ scale = Vector2( 0.998047, 1.00403 )
 polygon = PoolVector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 
 [node name="crate_green" type="Sprite" parent="."]
+position = Vector2( 64, 64 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 576, 0, 64, 64 )
@@ -57,6 +61,7 @@ scale = Vector2( 0.998047, 1.00403 )
 polygon = PoolVector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 
 [node name="crate_gray" type="Sprite" parent="."]
+position = Vector2( 128, 64 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 640, 0, 64, 64 )
@@ -70,6 +75,7 @@ scale = Vector2( 0.998047, 1.00403 )
 polygon = PoolVector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 
 [node name="Wall_red" type="Sprite" parent="."]
+position = Vector2( 0, 128 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 448, 448, 64, 64 )
@@ -83,6 +89,7 @@ scale = Vector2( 0.998047, 1.00403 )
 polygon = PoolVector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 
 [node name="Wall_gray" type="Sprite" parent="."]
+position = Vector2( 64, 128 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 512, 448, 64, 64 )
@@ -96,6 +103,7 @@ scale = Vector2( 0.998047, 1.00403 )
 polygon = PoolVector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 
 [node name="Wall_brown" type="Sprite" parent="."]
+position = Vector2( 128, 128 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 576, 448, 64, 64 )
@@ -109,16 +117,19 @@ scale = Vector2( 0.998047, 1.00403 )
 polygon = PoolVector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 
 [node name="floor_green" type="Sprite" parent="."]
+position = Vector2( 192, 0 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 640, 384, 64, 64 )
 
 [node name="floor_gray" type="Sprite" parent="."]
+position = Vector2( 192, 64 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 704, 384, 64, 64 )
 
 [node name="floor_brown" type="Sprite" parent="."]
+position = Vector2( 192, 128 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 768, 384, 64, 64 )
