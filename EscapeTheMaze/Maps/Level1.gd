@@ -56,6 +56,10 @@ func spawn_items():
 		var id = itens.get_cellv(cell)
 		var type = itens.tile_set.tile_get_name(id)
 		var pos = itens.map_to_world(cell) + itens.cell_size/2
+		#var pos = itens.map_to_world(cell) + itens.cell_size.rotated(-PI / 4.0)/2
+		#var pos = itens.map_to_world(cell) + Vector2(0, itens.cell_size.y / 2.0)
+		#print(itens.cell_size.rotated(PI / 2.0))
+		#print(pos)
 		match type:
 			"slime_spawn":
 				var s = Enemy.instance()
@@ -63,6 +67,8 @@ func spawn_items():
 				s.tile_size = itens.cell_size
 				add_child(s)
 			"player_spawn":
+				print(itens.cell_size.rotated(PI / 2.0))
+				print(pos)
 				$Player.position = pos
 				$Player.tile_size = itens.cell_size
 			"key_red", "coin", "star":
